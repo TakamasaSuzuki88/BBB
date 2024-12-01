@@ -3,43 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>たかまさのホームページ</title>
+    <title>たかまさの音楽と映画</title>
     <style>
-        /* 全体に筆書き風フォントを設定 */
         body {
-            font-family: 'Yuji Syuku', serif;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-
-        /* タイトルや見出しのフォントサイズを調整 */
-        h1, h2 {
-            font-family: 'Yuji Syuku', serif;
-            font-size: 2em;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
         }
-
-        /* 段落のフォントサイズを少し大きく */
-        p {
-            font-size: 1.2em;
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .content {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
-    <!-- Google Fontsから筆書き風フォントを読み込む -->
-    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>こんにちは！</h1>
-    <p>これはたかまさの初めてのホームページです。</p>
-    
-    <!-- プロフィールセクション -->
-    <h2>プロフィール</h2>
-    <p>名前: 鈴木たかまさ</p>
-    <p>職業: 音楽家、芸術家、サッカー家</p>
-    <p>自己紹介:  
-        1977年生まれ。音楽、アート、そしてサッカーを通じて独自の世界観を追求しています。  
-        最新作「アスティスの旅」は、エストニアの風景を舞台にした叙情的な物語で、愛と再生をテーマに描きました。  
-        自分の表現を大切にしながら、多方面で創作活動を続けています。
-    </p>
+    <header>
+        <h1>たかまさの音楽と映画の世界</h1>
+    </header>
 
-    <!-- 画像を表示 -->
-    <h2>画像ギャラリー</h2>
-    <img src="https://i.imgur.com/eygiszy.jpg" alt="作品画像" width="600">
+    <nav>
+        <a href="#music">音楽</a>
+        <a href="#film">映画</a>
+        <a href="#contact">お問い合わせ</a>
+    </nav>
+
+    <div class="content" id="music">
+        <h2>音楽</h2>
+        <p>ここでは、私のアルバムやシングルについて紹介します。試聴リンクや歌詞、制作の裏話も公開していきます。</p>
+    </div>
+
+    <div class="content" id="film">
+        <h2>映画</h2>
+        <p>私が制作している映画やこれまでの作品について紹介します。予告編や撮影風景などの映像も載せる予定です。</p>
+    </div>
+
+    <div class="content" id="contact">
+        <h2>お問い合わせ</h2>
+        <p>お問い合わせはメールにてご連絡ください: <a href="mailto:example@example.com">example@example.com</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 たかまさの音楽と映画</p>
+    </footer>
 </body>
 </html>
